@@ -21,21 +21,12 @@ struct ContentView: View {
                     .font(Font.system(size: 90))
                     .fontWeight(.thin)
                     .foregroundStyle(.white)
-                ZStack{
-                    Circle()
-                        .foregroundColor(.gray)
-                        .frame(width: 100)
-                    
-                    Circle()
-                        .foregroundColor(.black)
-                        .frame(width: 93)
-                    
-                    Circle()
-                        .foregroundColor(.gray)
-                        .frame(width: 89)
-                    Text("Reset")
-                        .foregroundStyle(.white)
-                        .font(.title2)
+                
+                //Creat a circular button
+                HStack{
+                    CircleButtonView(buttonColor: Color("Dark Grey"), label: "Restart", labelColor: .white)
+                    Spacer()
+                    CircleButtonView(buttonColor: Color("Dark Green"), label: "Start", labelColor: .green)
                 }
             }
             .padding()
@@ -44,5 +35,30 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TabView{
+        Text("World Clock")
+            .tabItem {
+                Image(systemName: "alarm.fill")
+                Text("World Clock")
+            }
+        
+        Text("Alarm")
+            .tabItem {
+                Image(systemName: "alarm.fill")
+                Text("Alarm")
+            }
+        
+        ContentView()
+            .tabItem {
+                Image(systemName: "stopwatch.fill")
+                Text("Stopwatch")
+            }
+        
+        Text("Timer")
+            .tabItem {
+                Image(systemName: "timer")
+                Text("Timer")
+            }
+        
+    }
 }

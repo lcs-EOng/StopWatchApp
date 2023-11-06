@@ -14,6 +14,7 @@
 		26E27DF22AF529F30029C2D7 /* stopWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E27DF12AF529F30029C2D7 /* stopWatchTests.swift */; };
 		26E27DFC2AF529F30029C2D7 /* stopWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E27DFB2AF529F30029C2D7 /* stopWatchUITests.swift */; };
 		26E27DFE2AF529F30029C2D7 /* stopWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E27DFD2AF529F30029C2D7 /* stopWatchUITestsLaunchTests.swift */; };
+		26E27E0B2AF530790029C2D7 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E27E0A2AF530790029C2D7 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		26E27DF72AF529F30029C2D7 /* stopWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stopWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E27DFB2AF529F30029C2D7 /* stopWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopWatchUITests.swift; sourceTree = "<group>"; };
 		26E27DFD2AF529F30029C2D7 /* stopWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26E27E0A2AF530790029C2D7 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				26E27DE02AF529F20029C2D7 /* stopWatchApp.swift */,
 				26E27DE22AF529F20029C2D7 /* ContentView.swift */,
+				26E27E0A2AF530790029C2D7 /* CircleButtonView.swift */,
 				26E27DE42AF529F30029C2D7 /* Assets.xcassets */,
 				26E27DE62AF529F30029C2D7 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E27E0B2AF530790029C2D7 /* CircleButtonView.swift in Sources */,
 				26E27DE32AF529F20029C2D7 /* ContentView.swift in Sources */,
 				26E27DE12AF529F20029C2D7 /* stopWatchApp.swift in Sources */,
 			);
