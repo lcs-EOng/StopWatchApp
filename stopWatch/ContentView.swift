@@ -28,6 +28,14 @@ struct ContentView: View {
                     Spacer()
                     CircleButtonView(buttonColor: Color("Dark Green"), label: "Start", labelColor: .green)
                 }
+                //List of items
+                List{
+                    Text("1")
+                    Text("2")
+                    Text("3")
+                    Text("4")
+                    Text("5")
+                }
             }
             .padding()
         }
@@ -35,7 +43,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    TabView{
+        TabView(selection: Binding.constant(3)){
         Text("World Clock")
             .tabItem {
                 Image(systemName: "alarm.fill")
@@ -59,6 +67,11 @@ struct ContentView: View {
                 Image(systemName: "timer")
                 Text("Timer")
             }
+        
+        //Change the accent color for the currently active tab item
+            .accentColor(.orange)
+            .preferredColorScheme(.dark)
+        
         
     }
 }
