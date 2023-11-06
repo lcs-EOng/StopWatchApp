@@ -17,6 +17,9 @@ struct ContentView: View {
             
             //Second layer (rest of interface)
             VStack {
+                
+            Spacer()
+                
                 Text("00:09.96")
                     .font(Font.system(size: 90))
                     .fontWeight(.thin)
@@ -36,6 +39,7 @@ struct ContentView: View {
                     Text("4")
                     Text("5")
                 }
+                .frame(height: 300)
             }
             .padding()
         }
